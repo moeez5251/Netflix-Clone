@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background: url("assets/images/bg.webp");
+    height: 130vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2370px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    height: 130vh;
+    width: 100%;
+    opacity: 0.59;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-top: 50px;
+}
+
+nav img {
+    width: 141px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.height {
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.height> :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.height>:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.height>:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input {
+    border: solid 1.5px gray;
+    background: rgb(20 20 20);
+    padding: 18px;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.input:focus~label,
+input:valid~label {
+    transform: translateY(-30%) scale(0.8);
+    border-color: white;
+}
+
+.line {
+    background-color: rgb(35, 35, 35);
+    height: 7px;
+}
+
+.btn {
+    padding: 0.4rem 1.3rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    inset: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    font-size: 0.875rem;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.first :first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.secimage {
+    display: flex;
+    width: 136vw;
+    overflow: hidden;
+}
+
+.first img {
+    width: 35vw;
+    z-index: 1;
+    position: relative;
+}
+
+
+.first video {
+    position: relative;
+    width: 31vw;
+    height: 27vw;
+    position: absolute;
+    margin-right: 0px;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    text-wrap: nowrap;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+.second{
+    max-width: 75vw;
+}
+.second>div img {
+    right: 30px;
+    top: -20px;
+}
+
+.second>:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 190vw;
+}
+
+.second>div :nth-child(1),
+.third>div :nth-child(1) {
+    text-wrap: wrap;
+}
+
+.fourth>div :nth-child(1) {
+    width: 556px;
+
+}
+
+.fourth {
+    gap: 40px;
+    height: 80vh;
+}
+.faq{
+    color:white;
+}
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+    padding: 34px 0px;
+}
+
+.faqbox {
+    max-width: 75vw;
+    margin: 10px auto;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+}
+.faqbox:hover{
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: rgb(65, 65, 65);
+
+}
+
+.faq >span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.faq .email{
+    justify-content: center;
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+
+ .email :first-child input{
+    padding: 17px 183px 11px 22px;
+ }
+ .email> :nth-child(2){
+    padding: 11px 40px;
+    font-size: 22px;
+ }
+ footer{
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+ }
+footer .question{
+    padding: 34px 0px;
+    text-decoration: underline;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+.footer-item{
+    display: flex;   
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-item a,.ending,.question{
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#Language{
+    background: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.ending{
+    margin-top: 20px;
+}
