@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-    max-width: 80vw;
+    max-width: 75vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -42,9 +42,10 @@ nav {
 }
 
 nav img {
-    width: 141px;
+    width: 150px;
     position: relative;
     z-index: 10;
+    opacity: 0.85;
 }
 
 nav button {
@@ -144,10 +145,12 @@ input:valid~label {
 .first {
     display: flex;
     justify-content: center;
-    max-width: 60vw;
+    max-width: 66vw;
     margin: auto;
     color: white;
     align-items: center;
+    gap: 67px;
+    padding: 40px 0px
 }
 
 .first :first-child {
@@ -157,12 +160,14 @@ input:valid~label {
 
 .secimage {
     display: flex;
-    width: 136vw;
+    width: 1300px;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .first img {
-    width: 35vw;
+    width: 450px;
     z-index: 1;
     position: relative;
 }
@@ -170,8 +175,8 @@ input:valid~label {
 
 .first video {
     position: relative;
-    width: 30vw;
-    height: 27vw;
+    width: 400px;
+    height: 326px;
     position: absolute;
     margin-right: 0px;
 }
@@ -212,7 +217,6 @@ input:valid~label {
 
 .fourth {
     gap: 40px;
-    height: 80vh;
 }
 .faq{
     color:white;
@@ -297,4 +301,93 @@ footer .question{
 }
 .ending{
     margin-top: 20px;
+}
+
+@media screen and (max-width:1350px) {
+    .first{
+       flex-wrap: wrap;
+    }
+    .second,.fourth{
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen and (max-width:630px) {
+    .first img{
+        width: 296px;
+    }
+    .first video{
+        width: 249px;
+    height: 224px;
+    }
+    .fourth>div :nth-child(1) {
+        width: 369px;
+    }
+    .second>div img {
+        right: 0px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 41px;
+       
+    }
+    .email,.resp{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .height> :first-child {
+        font-size: 32px;
+    }
+    .height>:nth-child(2) {
+        font-size: 18px;
+    }
+    .btn-red-sm {
+        font-size: 18px;
+    }
+    .input,.email :first-child input{
+        padding: 13px 65px;
+    }
+    .first>div :first-child {
+        font-size: 32px;
+    }
+    .first>div :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .first{
+        gap: 30px;
+    }
+    .faq h2 {
+        font-size: 32px;
+    }
+    .faqbox{
+        font-size: 18px;
+    }
+    .email> :nth-child(2) {
+        padding: 12px 23px;
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width:400px) {
+    .first img{
+        width: 200px;
+    }
+    .first video{
+        width: 149px;
+    height: 124px;
+    }
+    .fourth>div :nth-child(1) {
+        width: 228px;
+    }
+    .input, .email :first-child input {
+        padding: 13px 23px;
+    }
+    nav {
+        max-width: 87vw;
+        justify-content: space-between;
+    }
+    nav img{
+        width: 100px;
+    }
 }
